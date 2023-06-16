@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import ImgPerfil from "../../assets/eu.png"
 import { TypeAnimation } from "react-type-animation"
 
-const Animacao = styled(TypeAnimation)`
+const Animation = styled(TypeAnimation)`
 
 `
 
@@ -265,7 +265,7 @@ const Home = () => {
                             }}
                         >
 
-                            <Description>and I'm a <Animacao
+                            <Description>and I'm a <Animation
                                 sequence={[
                                     'Desenvolvedor Frontend',
                                     1000,
@@ -293,7 +293,7 @@ const Home = () => {
                                 }}
                             >
 
-                                <Button>About Me</Button>
+                                <Button>Download CV</Button>
 
                             </motion.div>
 
@@ -303,7 +303,7 @@ const Home = () => {
 
                 </Info>
 
-                <AboutMe>
+                {/* <AboutMe>
 
                     <TitleAbout>About Me</TitleAbout>
 
@@ -317,7 +317,7 @@ const Home = () => {
 
                     </Info>
 
-                </AboutMe>
+                </AboutMe> */}
 
             </Main>
 

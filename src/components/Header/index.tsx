@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
 const Headers = styled.header`
-    widht: 100%;
+    width: 100%;
     height: 90px;
     display: flex;
     padding: 0 20px;
@@ -132,6 +132,21 @@ const Header = () => {
                             }}
                         >
                             <Li>Projects</Li>
+
+                        </motion.div>
+                    </LinkEdit>
+
+                    <LinkEdit to="/Skills">
+                        <motion.div
+                            initial={{ opacity: 0, y: 0, z: -100 }}
+                            animate={{ opacity: 1, y: 0, z: 0 }}
+                            transition={{
+                                duration: 2,
+                                delay: 1.2,
+                                ease: [0, 0.75, 0.25, 1]
+                            }}
+                        >
+                            <Li>Skills</Li>
 
                         </motion.div>
                     </LinkEdit>
