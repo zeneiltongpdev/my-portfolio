@@ -242,11 +242,11 @@ const Home = () => {
 
                             <Description>and I'm a <Animation
                                 sequence={[
-                                    'Desenvolvedor Frontend',
+                                    'Developer Frontend',
                                     1000,
-                                    'Desenvolvedor Backend',
+                                    'Developer Backend',
                                     1000,
-                                    'Desenvolvedor Fullstack',
+                                    'Developer Fullstack',
                                     1000,
                                 ]}
                                 speed={1}
