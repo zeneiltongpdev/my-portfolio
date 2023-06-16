@@ -10,7 +10,7 @@ const Animation = styled(TypeAnimation)`
 
 const Main = styled.main`
     width: 100%;
-    min-height: 86.3vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,31 +142,6 @@ const Button = styled.button`
         cursor: pointer;
     }
 `
-
-const AboutMe = styled.div`
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-`
-
-const TitleAbout = styled.h1`
-    color: #111;
-`
-
-const SubTitleAbout = styled.p`
-    color: #dc143c;
-    font-weight: 600;
-`
-
-const Span = styled.span`
-    border: 1px solid #111;
-    width: 50px;
-`
-
 const Home = () => {
 
     return (
@@ -302,22 +277,6 @@ const Home = () => {
                     </DivTexts>
 
                 </Info>
-
-                {/* <AboutMe>
-
-                    <TitleAbout>About Me</TitleAbout>
-
-                    <SubTitleAbout><Span/>who I am<Span/></SubTitleAbout>
-
-                    <Info> 
-
-                        <DivPhoto></DivPhoto>
-
-                        <DivTexts></DivTexts>
-
-                    </Info>
-
-                </AboutMe> */}
 
             </Main>
 
