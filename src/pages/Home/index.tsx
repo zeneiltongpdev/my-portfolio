@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { motion } from "framer-motion";
 import ImgPerfil from "../../assets/eu.png";
 import { TypeAnimation } from "react-type-animation";
+//import { DownloadButton } from "../../components/Button/button";
 
 const Animation = styled(TypeAnimation)``;
 
@@ -247,7 +248,7 @@ const Home = () => {
                   ease: [0, 0.75, 0.25, 1],
                 }}
               >
-                <Button>Download CV</Button>
+                <Button> Download CV </Button>
               </motion.div>
             </DivButton>
           </DivTexts>
