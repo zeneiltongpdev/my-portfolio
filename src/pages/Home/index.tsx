@@ -54,8 +54,8 @@ const DivPhoto = styled.div`
 `;
 
 const Img = styled.img`
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   border: 2px solid #dc143c;
   border-radius: 50%;
 
@@ -236,6 +236,18 @@ const Home = () => {
                   repeat={Infinity}
                 />
               </Description>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 0, z: -100 }}
+              animate={{ opacity: 1, y: 0, z: 0 }}
+              transition={{
+                duration: 2,
+                delay: 2.2,
+                ease: [0, 0.75, 0.25, 1],
+              }}
+            >
+              <P>This Portfolio is still in 🚧Construction🚧</P>
             </motion.div>
 
             <DivButton>
