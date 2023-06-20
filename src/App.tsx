@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    //backgroundImage: url('../assets/background.avif') no-repeat;
     background-color: #111;
   }
 
