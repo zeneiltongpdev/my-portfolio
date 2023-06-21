@@ -17,7 +17,7 @@ const Logo = styled.div`
 `
 
 const Nav = styled.nav`
-    width: 70%;
+    width: 65%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -47,7 +47,8 @@ const Li = styled.li`
 
 const H1 = styled.h1`
     color: #fff;
-    font-size: 50px;
+    font-size: 70px;
+    margin-left: 50px;
 `
 
 const Span = styled.span`

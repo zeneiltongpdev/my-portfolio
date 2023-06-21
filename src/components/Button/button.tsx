@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
-import "./DownloadButton.css";
-import Curriculo from "../../assets/Curriculo.pdf"
+import Curriculo from "../../assets/Curriculo.pdf";
 
 const DownloadButtonStyle = styled.button`
   position: relative;
@@ -13,13 +12,30 @@ const DownloadButtonStyle = styled.button`
   &:hover {
     box-shadow: rgba(220, 20, 60, 0.25) 0px 54px 55px,
       rgba(220, 20, 60, 0.12) 0px -12px 30px,
-      rgba(220, 20, 60, 0.12) 0px 4px 6px, rgba(220, 20, 60, 0.17) 0px 12px 13px,
+      rgba(220, 20, 60, 0.25) 0px 4px 6px, rgba(220, 20, 60, 0.17) 0px 12px 13px,
       rgba(220, 20, 60, 0.09) 0px -3px 5px;
   }
 
   &:hover .download {
     transform: translateY(100%);
   }
+
+  .download svg polyline,.download svg line {
+    animation: DownloadButtonDocs 1s infinite;
+  }
+
+  @keyframes DownloadButtonDocs {
+    0% {
+     transform: translateY(0%);
+    }
+   
+    50% {
+     transform: translateY(-15%);
+    }
+   
+    100% {
+     transform: translateY(0%);
+    }
 `;
 
 const DownloadButtonDocs = styled.div`
