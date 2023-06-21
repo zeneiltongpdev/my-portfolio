@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { motion } from "framer-motion";
 import ImgPerfil from "../../assets/eu.png";
 import { TypeAnimation } from "react-type-animation";
+import DownloadButton from "../../components/Button/button";
 //import { DownloadButton } from "../../components/Button/button";
 
 const Animation = styled(TypeAnimation)``;
@@ -124,22 +125,22 @@ const DivButton = styled.div`
   width: 700px;
 `;
 
-const Button = styled.button`
-  border: none;
-  background: #dc143c;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 18px;
-  transition: 0.3s ease-in-out;
+// const Button = styled.button`
+//   border: none;
+//   background: #dc143c;
+//   width: 200px;
+//   height: 50px;
+//   border-radius: 5px;
+//   color: #fff;
+//   font-size: 18px;
+//   transition: 0.3s ease-in-out;
 
-  &:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 8px 8px 5px #cccccc;
-    cursor: pointer;
-  }
-`;
+//   &:hover {
+//     transform: translate(-5px, -5px);
+//     box-shadow: 8px 8px 5px #cccccc;
+//     cursor: pointer;
+//   }
+// `;
 const Home = () => {
   return (
     <>
@@ -260,7 +261,8 @@ const Home = () => {
                   ease: [0, 0.75, 0.25, 1],
                 }}
               >
-                <Button> Download CV </Button>
+                <DownloadButton />
+            
               </motion.div>
             </DivButton>
           </DivTexts>
