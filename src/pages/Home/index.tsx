@@ -66,6 +66,7 @@ const Img = styled.img`
   }
 
   @media (max-width: 768px) {
+    margin-top: 220px;
     width: 350px;
     height: 350px;
   }
@@ -86,6 +87,7 @@ const DivTexts = styled.div`
     width: 100%;
     height: 65%;
     padding: 0 50px;
+    margin-top: 150px;
   }
 `;
 
@@ -95,6 +97,10 @@ const P = styled.p`
 
   @media (max-width: 1024px) {
     font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
   }
 `;
 
@@ -119,28 +125,16 @@ const Description = styled.h4`
   @media (max-width: 1024px) {
     font-size: 32px;
   }
-`;
-
+  `;
+  
 const DivButton = styled.div`
   width: 700px;
+
+  @media (max-width: 768px) {
+    width: 275px;
+  }
 `;
 
-// const Button = styled.button`
-//   border: none;
-//   background: #dc143c;
-//   width: 200px;
-//   height: 50px;
-//   border-radius: 5px;
-//   color: #fff;
-//   font-size: 18px;
-//   transition: 0.3s ease-in-out;
-
-//   &:hover {
-//     transform: translate(-5px, -5px);
-//     box-shadow: 8px 8px 5px #cccccc;
-//     cursor: pointer;
-//   }
-// `;
 const Home = () => {
   return (
     <>
