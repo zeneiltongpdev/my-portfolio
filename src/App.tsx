@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import { AppRoutes } from "./pages/routes"
 
-
-
 const GlobalStyles = createGlobalStyle`
   *{
     margin: 0;
