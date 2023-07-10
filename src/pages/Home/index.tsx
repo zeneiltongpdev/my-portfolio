@@ -218,10 +218,10 @@ const Home = () => {
                 I'm a{" "}
                 <Animation
                   sequence={[
-                    "Developer Front-end",
-                    1000,
-                    "Developer Back-end",
-                    1000,
+                    // "Developer Front-end",
+                    // 1000,
+                    // "Developer Back-end",
+                    // 1000,
                     "Developer Full Stack, and",
                     1000,
                     "Developer Mobile!",
