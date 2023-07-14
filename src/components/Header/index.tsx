@@ -3,18 +3,32 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Headers = styled.header`
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 90px;
-  display: flex;
   padding: 0 20px;
+  margin-top: 10px;
+  border: solid 2px #dc143c;
+
+  @media (max-width: 1024px) {
+    width: 76.3%;
+    height: 70px;
+    margin-top: 10px;
+  }
 `;
 
 const Logo = styled.div`
-  margin-top: 15px;
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
+
+  border: solid 2px #dc143c;
+
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
 
   @media (max-width: 768px) {
     margin-top: 10px;
@@ -55,6 +69,11 @@ const H1 = styled.h1`
   font-size: 70px;
   margin-left: 50px;
 
+  @media (max-width: 1024px) {
+    font-size: 36pt;
+    margin-left: 3px;
+  }
+
   @media (max-width: 768px) {
     margin-left: 10px;
     font-size: 60px;
@@ -63,6 +82,7 @@ const H1 = styled.h1`
 
 const Span = styled.span`
   color: #dc143c;
+  cursor: pointer;
 `;
 
 const LinkEdit = styled(Link)`
@@ -84,7 +104,7 @@ const Header = () => {
             }}
           >
             <H1>
-              Portfo<Span>lio.</Span>
+              zeneiltongp<Span>.dev</Span>
             </H1>
           </motion.div>
         </LinkEdit>

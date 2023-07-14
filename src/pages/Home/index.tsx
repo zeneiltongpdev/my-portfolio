@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import ImgPerfil from "../../assets/eu.png";
 import { TypeAnimation } from "react-type-animation";
 import DownloadButton from "../../components/Button/button";
-//import { DownloadButton } from "../../components/Button/button";
+import Socials from "../../components/Socials";
 
 const Animation = styled(TypeAnimation)``;
 
@@ -125,14 +125,18 @@ const Description = styled.h4`
   @media (max-width: 1024px) {
     font-size: 32px;
   }
-  `;
-  
+`;
+
 const DivButton = styled.div`
   width: 700px;
 
   @media (max-width: 768px) {
     width: 275px;
   }
+`;
+
+const DivSocial = styled.div`
+  padding-bottom: 20px;
 `;
 
 const Home = () => {
@@ -166,7 +170,7 @@ const Home = () => {
                 ease: [0, 0.75, 0.25, 1],
               }}
             >
-              <P>Hello There's👋!</P>
+              <P>Hello there's!👋</P>
             </motion.div>
 
             <motion.div
@@ -202,7 +206,7 @@ const Home = () => {
                 ease: [0, 0.75, 0.25, 1],
               }}
             >
-              <Name>Zeneilton!</Name>
+              <Name>Zeneilton Granja!</Name>
             </motion.div>
 
             <motion.div
@@ -218,10 +222,10 @@ const Home = () => {
                 I'm a{" "}
                 <Animation
                   sequence={[
-                    // "Developer Front-end",
-                    // 1000,
-                    // "Developer Back-end",
-                    // 1000,
+                    "Developer Front-end",
+                    1000,
+                    "Developer Back-end",
+                    1000,
                     "Developer Full Stack, and",
                     1000,
                     "Developer Mobile!",
@@ -256,11 +260,23 @@ const Home = () => {
                 }}
               >
                 <DownloadButton />
-            
               </motion.div>
             </DivButton>
           </DivTexts>
         </Info>
+        <DivSocial>
+          <motion.div
+            initial={{ opacity: 0, y: 0, z: -100 }}
+            animate={{ opacity: 1, y: 0, z: 0 }}
+            transition={{
+              duration: 2,
+              delay: 3,
+              ease: [0, 0.75, 0.25, 1],
+            }}
+          >
+            <Socials />
+          </motion.div>
+        </DivSocial>
       </Main>
     </>
   );
