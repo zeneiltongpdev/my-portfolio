@@ -7,9 +7,9 @@ const Headers = styled.header`
   align-items: center;
   width: 100%;
   height: 90px;
-  padding: 0 20px;
+  padding: 0 25px;
   margin-top: 10px;
-  border: solid 2px #dc143c;
+  border: solid 1px #dc143c;
 
   @media (max-width: 1024px) {
     width: 76.3%;
@@ -24,7 +24,7 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
 
-  border: solid 2px #dc143c;
+  border: solid 1px #dc143c;
 
   @media (max-width: 1024px) {
     width: 50%;
