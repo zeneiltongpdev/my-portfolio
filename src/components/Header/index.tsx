@@ -9,6 +9,7 @@ const Headers = styled.header`
   height: 90px;
   padding: 0 25px;
   margin-top: 10px;
+
   border: solid 1px #dc143c;
 
   @media (max-width: 1024px) {
@@ -19,7 +20,7 @@ const Headers = styled.header`
 `;
 
 const Logo = styled.div`
-  width: 40%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -36,7 +37,7 @@ const Logo = styled.div`
 `;
 
 const Nav = styled.nav`
-  width: 65%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -67,7 +68,17 @@ const Li = styled.li`
 const H1 = styled.h1`
   color: #fff;
   font-size: 70px;
-  margin-left: 50px;
+  margin-left: 90px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: #dc143c;
+    & > span {
+      color: #fff;
+    }
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+  }
 
   @media (max-width: 1024px) {
     font-size: 36pt;
@@ -83,6 +94,7 @@ const H1 = styled.h1`
 const Span = styled.span`
   color: #dc143c;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 `;
 
 const LinkEdit = styled(Link)`
@@ -136,7 +148,7 @@ const Header = () => {
                 ease: [0, 0.75, 0.25, 1],
               }}
             >
-              <Li>About</Li>
+              <Li>About Me!</Li>
             </motion.div>
           </LinkEdit>
 

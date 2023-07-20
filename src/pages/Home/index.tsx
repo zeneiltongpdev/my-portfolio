@@ -5,21 +5,41 @@ import ImgPerfil from "../../assets/eu.png";
 import { TypeAnimation } from "react-type-animation";
 import DownloadButton from "../../components/Button/button";
 import Socials from "../../components/Socials";
+import Home2 from "./home2";
 
 const Animation = styled(TypeAnimation)``;
 
 const Main = styled.main`
   width: 100%;
-  height: 65vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 5%;
+
+  @media (max-width: 1600px) {
+    height: 80vh;
+  }
+
+  @media (max-width: 1440px) {
+    margin-top: 3%;
+    height: 5%;
+  }
+
+  @media (max-width: 1360px) {
+    height: 65vh;
+  }
+
+  @media (max-width: 1024px) {
+
+  }
 
   @media (max-width: 768px) {
     margin-top: 50px;
   }
+
+
 `;
 
 const Info = styled.div`
@@ -55,8 +75,8 @@ const DivPhoto = styled.div`
 `;
 
 const Img = styled.img`
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   border: 2px solid #dc143c;
   border-radius: 50%;
 
@@ -66,9 +86,9 @@ const Img = styled.img`
   }
 
   @media (max-width: 768px) {
-    margin-top: 220px;
-    width: 350px;
-    height: 350px;
+    margin-top: 100%;
+    width: 250px;
+    height: 250px;
   }
 `;
 
@@ -268,8 +288,7 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, y: 0, z: -100 }}
             animate={{ opacity: 1, y: 0, z: 0 }}
-            transition={{
-              duration: 2,
+            transition={{duration: 2,
               delay: 3,
               ease: [0, 0.75, 0.25, 1],
             }}
@@ -277,9 +296,12 @@ const Home = () => {
             <Socials />
           </motion.div>
         </DivSocial>
+
+        <Home2 />
       </Main>
     </>
   );
 };
 
 export { Home };
+//1360px 768px
