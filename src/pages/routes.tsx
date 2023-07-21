@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Home";
-import { About } from "./Home/About";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
 
@@ -9,8 +8,6 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-
-        <Route path="/about" element={<About />} />
 
         <Route path="/projects" element={<Projects />} />
 

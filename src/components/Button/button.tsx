@@ -36,6 +36,7 @@ const DownloadButtonStyle = styled.button`
     100% {
      transform: translateY(0%);
     }
+  }
 `;
 
 const DownloadButtonDocs = styled.div`

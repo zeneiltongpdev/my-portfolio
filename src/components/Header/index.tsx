@@ -8,9 +8,7 @@ const Headers = styled.header`
   width: 100%;
   height: 90px;
   padding: 0 25px;
-  margin-top: 10px;
-
-  border: solid 1px #dc143c;
+  margin-top: 20px;
 
   @media (max-width: 1024px) {
     width: 76.3%;
@@ -24,8 +22,6 @@ const Logo = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-
-  border: solid 1px #dc143c;
 
   @media (max-width: 1024px) {
     width: 50%;
@@ -135,20 +131,6 @@ const Header = () => {
               }}
             >
               <Li>Home</Li>
-            </motion.div>
-          </LinkEdit>
-
-          <LinkEdit to="/about">
-            <motion.div
-              initial={{ opacity: 0, y: 0, z: -100 }}
-              animate={{ opacity: 1, y: 0, z: 0 }}
-              transition={{
-                duration: 2,
-                delay: 0.9,
-                ease: [0, 0.75, 0.25, 1],
-              }}
-            >
-              <Li>About Me!</Li>
             </motion.div>
           </LinkEdit>
 

@@ -5,6 +5,7 @@ import ImgPerfil from "../../assets/eu.png";
 import { TypeAnimation } from "react-type-animation";
 import DownloadButton from "../../components/Button/button";
 import Socials from "../../components/Socials";
+import Scroll from "../../components/Button/scroll";
 import Home2 from "./home2";
 
 const Animation = styled(TypeAnimation)``;
@@ -16,10 +17,9 @@ const Main = styled.main`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5%;
 
   @media (max-width: 1600px) {
-    height: 80vh;
+    height: 100%;
   }
 
   @media (max-width: 1440px) {
@@ -28,18 +28,15 @@ const Main = styled.main`
   }
 
   @media (max-width: 1360px) {
-    height: 65vh;
+    height: auto;
   }
 
   @media (max-width: 1024px) {
-
   }
 
   @media (max-width: 768px) {
     margin-top: 50px;
   }
-
-
 `;
 
 const Info = styled.div`
@@ -50,6 +47,10 @@ const Info = styled.div`
   height: 65vh;
   margin-bottom: 100px;
   position: relative;
+
+  @media (max-width: 1600px) {
+    justify-content: space-between;
+  }
 
   @media (max-width: 1024px) {
     padding: 0px 100px;
@@ -155,8 +156,18 @@ const DivButton = styled.div`
   }
 `;
 
+const ScrollDiv = styled.div`
+  position: absolute;
+  margin-top: 150px;
+`;
+
 const DivSocial = styled.div`
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+  border-top: 1px solid #dc143c;
 `;
 
 const Home = () => {
@@ -284,24 +295,29 @@ const Home = () => {
             </DivButton>
           </DivTexts>
         </Info>
+        <ScrollDiv>
+          <motion.div
+            initial={{ opacity: 0, y: 0, z: -100 }}
+            animate={{ opacity: 1, y: 0, z: 0 }}
+            transition={{ duration: 2, delay: 3, ease: [0, 0.75, 0.25, 1] }}
+          >
+            <Scroll />
+          </motion.div>
+        </ScrollDiv>
+
+        <Home2 />
         <DivSocial>
           <motion.div
             initial={{ opacity: 0, y: 0, z: -100 }}
             animate={{ opacity: 1, y: 0, z: 0 }}
-            transition={{duration: 2,
-              delay: 3,
-              ease: [0, 0.75, 0.25, 1],
-            }}
+            transition={{ duration: 2, delay: 3, ease: [0, 0.75, 0.25, 1] }}
           >
             <Socials />
           </motion.div>
         </DivSocial>
-
-        <Home2 />
       </Main>
     </>
   );
 };
 
 export { Home };
-//1360px 768px
