@@ -201,7 +201,9 @@ const Home = () => {
                 ease: [0, 0.75, 0.25, 1],
               }}
             >
-              <P>Hello there's!👋</P>
+              <P>Hello there's! 
+                <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="hello-there" width="40px" />
+              </P>
             </motion.div>
 
             <motion.div
@@ -253,10 +255,10 @@ const Home = () => {
                 I'm a{" "}
                 <Animation
                   sequence={[
-                    "Developer Front-end",
-                    1000,
-                    "Developer Back-end",
-                    1000,
+                    // "Developer Front-end",
+                    // 1000,
+                    // "Developer Back-end",
+                    // 1000,
                     "Developer Full Stack, and",
                     1000,
                     "Developer Mobile!",

@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+// import Navbar from "./navbar";
 
 const Headers = styled.header`
   display: flex;
@@ -23,6 +24,8 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
 
+  border: 1px solid #dc143c;
+
   @media (max-width: 1024px) {
     width: 50%;
   }
@@ -38,6 +41,9 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+
+
+  border: 1px solid #dc143c;
 `;
 
 const Ul = styled.ul`
@@ -48,12 +54,14 @@ const Ul = styled.ul`
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
+
 `;
 
 const Li = styled.li`
   color: #fff;
   font-size: 20px;
   transition: 0.3s ease-in-out;
+  margin-right: 20px;
 
   &:hover {
     color: #dc143c;

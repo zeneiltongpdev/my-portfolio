@@ -9,8 +9,6 @@ const SocialMedia = styled.div`
   margin-bottom: 3%;
   gap: 20px;
 
-  /* border: 1px solid #dc143c; */
-
   @media (max-width: 1024px) {
     width: 20%;
     height: 8%;
@@ -25,7 +23,6 @@ const IconLinkedin = styled.svg`
   width: 38px;
   height: 38px;
   transition: 0.5s ease-in-out;
-  /* border: 1px solid #dc143c; */
 
   &:hover {
     transform: translateY(-5px);
@@ -46,7 +43,6 @@ const IconGitHub = styled.svg`
   width: 35px;
   height: 35px;
   transition: 0.5s ease-in-out;
-  /* border: 1px solid #dc143c; */
 
   &:hover {
     transform: translateY(-5px);
@@ -66,7 +62,6 @@ const IconWhatsapp = styled.svg`
   width: 32px;
   height: 32px;
   transition: 0.5s ease-in-out;
-  /* border: 1px solid #dc143c; */
 
   &:hover {
     transform: translateY(-5px);
@@ -82,7 +77,6 @@ const IconGmail = styled.svg`
   width: 37px;
   height: 35px;
   transition: 0.5s ease-in-out;
-  /* border: 1px solid #dc143c; */
 
   &:hover {
     transform: translateY(-5px);
